@@ -1,0 +1,39 @@
+:root {
+  --vp-font-family-base:
+    "Iosevka", "Maple Mono", "Cascadia Code", "Menlo", "DejaVu Sans Mono",
+    "Sarasa Gothic SC", "PingFang SC", "Microsoft YaHei", monospace !important;
+  --vp-font-family-mono:
+    "Iosevka", "Maple Mono", "Cascadia Code", "Menlo", "DejaVu Sans Mono",
+    "Sarasa Gothic SC", "PingFang SC", "Microsoft YaHei", monospace !important;
+  --vp-c-brand-1: #42b883;
+  --vp-c-brand-2: #42b88380;
+  --vp-c-brand-3: #42b883;
+  h2,
+  h3 {
+    color: var(--vp-c-brand-1);
+  }
+}
+
+.Layout {
+  .VPContent {
+    .VPDoc {
+      .container > .aside > .aside-container > .aside-content {
+        .VPDocAside {
+          .VPDocAsideOutline {
+            .content {
+              .VPDocOutlineItem.root {
+                a {
+                  height: 1rem;
+                  line-height: 1rem;
+                  &:hover {
+                    color: var(--vp-c-brand-1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
