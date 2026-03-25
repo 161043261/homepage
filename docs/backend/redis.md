@@ -273,8 +273,8 @@ zrevrange <key> <start> <stop> [withscores]
 | ---------------- | ------------------------------------------------------------------------------------ |
 | string           | redisObject.encoding 编码方式有 3 种: int, embstr, raw                               |
 |                  | int 编码: 值是整数                                                                   |
-|                  | embstr 编码: 值是字符串且长度 <= 44 字节，redisObject 和 SDS 连续分配内存            |
-|                  | raw 字符串: 值是字符串且长度 > 44 字节，redisObject 和 SDS 分别分配内存              |
+|                  | embstr 编码: 值是字符串且长度 <= 44 字节, redisObject 和 SDS 连续分配内存            |
+|                  | raw 字符串: 值是字符串且长度 > 44 字节, redisObject 和 SDS 分别分配内存              |
 | list             | quicklist: 由多个 listpack 节点组成的双向链表                                        |
 | hash             | 如果字段数量 <= 128 且每个字段值大小 <= 64 字节, 则使用 listpack; 否则使用 hashtable |
 | set              | 如果成员都是整数且成员数量 <= 512, 则使用 intset 整数集合                            |

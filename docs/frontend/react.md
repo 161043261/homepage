@@ -382,6 +382,8 @@ export default function App() {
 
 ## hook: useState
 
+> React 的 state 是一帧一帧的 (snapshot), 每一次渲染都有独立的 state, 异步回调函数会捕获该函数创建时的那一次渲染的 state 值 (闭包陷阱, Stale Closure 过期的闭包)
+
 ```js
 const [state /** 状态 */, setState /** 更新状态的函数 */] =
   useState(initialVal | () => initialVal /** 状态的初始值 */);

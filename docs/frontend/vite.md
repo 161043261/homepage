@@ -7,7 +7,7 @@
 - entry: 入口 JS 模块, 作为构建依赖图的开始, 默认是 `./src/index.js`, entry 可以有多个
 - output: 指定创建的 bundle 的输出目录, 输出文件路径; 默认输出目录是 `./dist`, 默认主要输出文件路径是 `./dist/main.js`, output 只能有一个
 - loader: webpack 原生支持加载 JS 和 JSON 文件, loader 使得 webpack 可以加载其他类型的文件
-- plugin: 扩展 webpack 功能; webpack 插件是一个具有 apply 方法的 JS 对象, apply 方法会被 webpack compiler 调用，并且在整个编译生命周期都可以访问 compiler 对象
+- plugin: 扩展 webpack 功能; webpack 插件是一个具有 apply 方法的 JS 对象, apply 方法会被 webpack compiler 调用, 并且在整个编译生命周期都可以访问 compiler 对象
 - mode: 模式, 可以是 development, production 或 none, 设置 mode 参数以开启 webpack 对应模式下的内置优化
 
 ```js
