@@ -14,6 +14,70 @@
 | onActivated() `<KeepAlive />`   | --                                                  |
 | onDeactivated() `<KeepAlive />` | --                                                  |
 
+## Hooks
+
+- [useActionState](#hook-useactionstate), [react.dev](https://react.dev/reference/react/useActionState)
+- [useCallback](#hook-perf-usecallback), [react.dev](https://react.dev/reference/react/useCallback)
+- [useContext](#hook-usecontext), [react.dev](https://react.dev/reference/react/useContext)
+- [useDebugValue](#hook-usedebugvalue), [react.dev](https://react.dev/reference/react/useDebugValue)
+- [useDeferredValue](#hook-perf-usedeferredvalue), [react.dev](https://react.dev/reference/react/useDeferredValue)
+- [useEffect](#hook-useeffect), [react.dev](https://react.dev/reference/react/useEffect)
+- [useEffectEvent](#todo), [react.dev](https://react.dev/reference/react/useEffectEvent) TODO
+- [useId](#hook-useid), [react.dev](https://react.dev/reference/react/useId)
+- [useImperativeHandle](#hook-useimperativehandle), [react.dev](https://react.dev/reference/react/useImperativeHandle)
+- [useInsertionEffect](#hook-useinsertioneffect), [react.dev](https://react.dev/reference/react/useInsertionEffect)
+- [useLayoutEffect](#hook-uselayouteffect), [react.dev](https://react.dev/reference/react/useLayoutEffect)
+- [useMemo](#hook-perf-usememo), [react.dev](https://react.dev/reference/react/useMemo)
+- [useOptimistic](#todo), [react.dev](https://react.dev/reference/react/useOptimistic) TODO
+- [useReducer](#hook-usereducer), [react.dev](https://react.dev/reference/react/useReducer)
+- [useRef](#hook-useref), [react.dev](https://react.dev/reference/react/useRef)
+- [useState](#hook-usestate), [react.dev](https://react.dev/reference/react/useState)
+- [useSyncExternalStore](#hook-usesyncexternalstore), [react.dev](https://react.dev/reference/react/useSyncExternalStore)
+- [useTransition](#hook-perf-usetransition), [react.dev](https://react.dev/reference/react/useTransition)
+- [useFormStatus](#todo), [react.dev](https://react.dev/reference/react-dom/hooks/useFormStatus) TODO
+
+## Components
+
+- `<Fragment />` [react.dev](https://react.dev/reference/react/Fragment)
+- `<Profiler />` [`<Profiler />`](#todo), [react.dev](https://react.dev/reference/react/Profiler) TODO
+- `<StrictMode />` [react.dev](https://react.dev/reference/react/StrictMode)
+- `<Suspense />` [`<Suspense />`](#component-suspense), [react.dev](https://react.dev/reference/react/Suspense)
+- `<Activity />` [`<Activity />`](#todo), [react.dev](https://react.dev/reference/react/Activity) TODO
+- `<ViewTransition />` [`<ViewTransition />`](#todo), [react.dev](https://react.dev/reference/react/ViewTransition) TODO
+
+## API
+
+- [act](#todo), [react.dev](https://react.dev/reference/react/act) TODO
+- [addTransitionType](#todo), [react.dev](https://react.dev/reference/react/addTransitionType) TODO
+- [captureOwnerStack](#todo), [react.dev](https://react.dev/reference/react/captureOwnerStack) TODO
+- [createContext](#hook-usecontext), [react.dev](https://react.dev/reference/react/createContext)
+- [lazy](#todo), [react.dev](https://react.dev/reference/react/lazy) TODO
+- [memo](#api-perf-memo), [react.dev](https://react.dev/reference/react/useMemo)
+- [startTransition](#todo), [react.dev](https://react.dev/reference/react/startTransition) TODO
+- [use](#todo), [react.dev](https://react.dev/reference/react/use)
+- [createPortal](#api-createportal), [react.dev](https://react.dev/reference/react-dom/createPortal) TODO
+- [flushSync](#todo), [react.dev](https://react.dev/reference/react-dom/flushSync) TODO
+- [preconnect](#todo), [react.dev](https://react.dev/reference/react-dom/preconnect) TODO
+- [prefetchDNS](#todo), [react.dev](https://react.dev/reference/react-dom/prefetchDNS) TODO
+- [preinit](#todo), [react.dev](https://react.dev/reference/react-dom/preinit) TODO
+- [preinitModule](#todo), [react.dev](https://react.dev/reference/react-dom/preinitModule) TODO
+- [preload](#todo), [react.dev](https://react.dev/reference/react-dom/preload) TODO
+- [preloadModule](#todo), [react.dev](https://react.dev/reference/react-dom/preloadModule) TODO
+
+### RSC only
+
+- [cache](#todo), [react.dev](https://react.dev/reference/react/cache) TODO
+- [cacheSignal](#todo), [react.dev](https://react.dev/reference/react/cacheSignal) TODO
+
+## TODO
+
+- useEffectEvent
+- useOptimistic
+- `<Profiler />`
+- `<Activity />` TODO
+- `<ViewTransition />` TODO
+- act
+
 ## React 特点
 
 1. 组件化
@@ -1226,7 +1290,7 @@ export default function App() {
 }
 ```
 
-## (perf) React.memo
+## API(perf): memo
 
 ### 触发组件更新的条件
 
@@ -1484,7 +1548,7 @@ useId 用于 SSR 场景下, 在双端生成相同的 ID, 避免 Hydration 水合
 const id: string = useId();
 ```
 
-## createPortal 传送组件
+## API: createPortal
 
 类似 Vue 的 `<Teleport />`, 将一个组件传送到指定 DOM 节点上, 成为该 DOM 节点的直接子元素
 
@@ -1530,7 +1594,7 @@ export default function App() {
 }
 ```
 
-## `<Suspense />` 异步组件
+## Component: `<Suspense />`
 
 类似 Vue 的 `<Suspense />`
 
@@ -1782,6 +1846,24 @@ export default function App() {
 :::
 
 ## hook: useActionState
+
+参数
+
+- action 表单提交或按下表单中的按钮时, 触发的回调函数, 接收上一个状态 (initialState 或上一个返回值) 和表单数据, 返回当前状态
+- initialState 初始状态
+- permalink 表单提交后跳转的 url, 可选
+
+返回值
+
+- state 当前状态
+- formAction 可以作为 form 属性传递给表单组件, 或作为 formAction 属性传递给表单中的按钮组件
+
+```ts
+const [state, formAction, isPending] = useActionsState<IState, FormData>(
+  action, // (oldState: IState, formData: FormData) => Promise<IState>
+  initialState, // IState
+);
+```
 
 Reference [useActionState](./next#hook-useactionstate)
 
