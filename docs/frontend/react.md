@@ -55,19 +55,9 @@
 - [memo](#api-perf-memo), [react.dev](https://react.dev/reference/react/useMemo)
 - [startTransition](#todo), [react.dev](https://react.dev/reference/react/startTransition) TODO
 - [use](#todo), [react.dev](https://react.dev/reference/react/use)
-- [createPortal](#api-createportal), [react.dev](https://react.dev/reference/react-dom/createPortal) TODO
+- [createPortal](#api-createportal), [react.dev](https://react.dev/reference/react-dom/createPortal)
 - [flushSync](#todo), [react.dev](https://react.dev/reference/react-dom/flushSync) TODO
-- [preconnect](#todo), [react.dev](https://react.dev/reference/react-dom/preconnect) TODO
-- [prefetchDNS](#todo), [react.dev](https://react.dev/reference/react-dom/prefetchDNS) TODO
-- [preinit](#todo), [react.dev](https://react.dev/reference/react-dom/preinit) TODO
-- [preinitModule](#todo), [react.dev](https://react.dev/reference/react-dom/preinitModule) TODO
-- [preload](#todo), [react.dev](https://react.dev/reference/react-dom/preload) TODO
-- [preloadModule](#todo), [react.dev](https://react.dev/reference/react-dom/preloadModule) TODO
-
-### RSC only
-
-- [cache](#todo), [react.dev](https://react.dev/reference/react/cache) TODO
-- [cacheSignal](#todo), [react.dev](https://react.dev/reference/react/cacheSignal) TODO
+- [createRoot](#todo), [react.dev](https://react.dev/reference/react-dom/createRoot) TODO
 
 ## TODO
 
@@ -77,6 +67,24 @@
 - `<Activity />` TODO
 - `<ViewTransition />` TODO
 - act
+- addTransitionType
+- captureOwnerStack
+- lazy
+- startTransition
+- use
+- flushSync
+- createRoot
+
+## Legacy API
+
+- [Children](https://react.dev/reference/react/Children)
+- [cloneElement](https://react.dev/reference/react/cloneElement)
+- [Component](https://react.dev/reference/react/Component)
+- [createElement](https://react.dev/reference/react/createElement)
+- [createRef](https://react.dev/reference/react/createRef)
+- [forwardRef](https://react.dev/reference/react/forwardRef)
+- [isValidElement](https://react.dev/reference/react/isValidElement)
+- [PureComponent](https://react.dev/reference/react/PureComponent)
 
 ## React 特点
 
