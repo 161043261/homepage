@@ -1,65 +1,71 @@
-import Image from "next/image";
+import { BookOpenText } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-1 flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex w-full max-w-3xl flex-1 flex-col items-center justify-between bg-white px-16 py-32 sm:items-start dark:bg-black">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl leading-10 font-semibold tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="bg-foreground text-background flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 transition-colors hover:bg-[#383838] md:w-39.5 dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/8 px-5 transition-colors hover:border-transparent hover:bg-black/4 md:w-39.5 dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+    <div className="bg-base-100 flex min-h-screen flex-col items-center justify-center font-sans">
+      <main className="hero bg-base-200/50 relative mx-auto min-h-[80vh] w-full max-w-5xl overflow-hidden rounded-3xl shadow-2xl">
+        {/* Background decoration */}
+        <div className="bg-primary/20 animate-blob absolute top-0 -left-4 h-72 w-72 rounded-full opacity-70 mix-blend-multiply blur-2xl filter"></div>
+        <div className="bg-secondary/20 animate-blob animation-delay-2000 absolute top-0 -right-4 h-72 w-72 rounded-full opacity-70 mix-blend-multiply blur-2xl filter"></div>
+        <div className="bg-accent/20 animate-blob animation-delay-4000 absolute -bottom-8 left-20 h-72 w-72 rounded-full opacity-70 mix-blend-multiply blur-2xl filter"></div>
+
+        <div className="hero-content relative z-10 flex-col px-8 py-20 text-center">
+          <div className="mb-8 rounded-3xl border border-white/20 bg-white/50 p-4 shadow-sm backdrop-blur-sm">
+            <BookOpenText className="text-primary h-16 w-16 drop-shadow-md" />
+          </div>
+
+          <div className="max-w-2xl">
+            <h1 className="text-base-content mb-6 text-5xl font-extrabold tracking-tight">
+              Welcome to <span className="text-primary">Knowledge Base</span>
+            </h1>
+
+            <p className="text-base-content/70 py-6 text-xl leading-relaxed font-light">
+              Explore comprehensive documentation on Frontend, Backend, and Core
+              CS concepts. Built with{" "}
+              <span className="text-primary font-semibold">Next.js 16</span> and{" "}
+              <span className="text-secondary font-semibold">Nextra 4</span>.
+            </p>
+
+            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+              <Link
+                href="/docs"
+                className="btn btn-primary btn-lg shadow-primary/30 rounded-full px-10 shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                Start Reading
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="ml-2 h-5 w-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </Link>
+              <a
+                href="https://161043261.github.io/resume/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline btn-secondary btn-lg rounded-full px-10 transition-all duration-300 hover:scale-105"
+              >
+                View Resume
+              </a>
+            </div>
+          </div>
         </div>
       </main>
+
+      <footer className="footer footer-center text-base-content/60 mt-auto p-10">
+        <aside>
+          <p>Built with ❤️ using Next.js & Tailwind CSS</p>
+        </aside>
+      </footer>
     </div>
   );
 }

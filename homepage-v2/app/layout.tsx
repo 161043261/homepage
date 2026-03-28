@@ -3,6 +3,8 @@ import { Banner, Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 import { PropsWithChildren } from "react";
+import "./globals.css";
+
 
 export const metadata = {
   // Define your metadata here
@@ -19,6 +21,7 @@ const navbar = (
 const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>;
 
 export default async function RootLayout({ children }: PropsWithChildren) {
+
   return (
     <html
       // Not required, but good for SEO
@@ -41,6 +44,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
           footer={footer}
           // ... Your additional layout options
+          
         >
           {children}
         </Layout>
