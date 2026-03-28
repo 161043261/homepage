@@ -1,71 +1,142 @@
-import { BookOpenText } from "lucide-react";
+"use client";
+
+import { BookOpenText, Copy } from "lucide-react";
 import Link from "next/link";
+import { useState, useRef } from "react";
+import Editor from "@monaco-editor/react";
+import { editor } from "monaco-editor";
+
+const DEFAULT_CODES: Record<string, string> = {
+  javascript: `// JavaScript Example
+/**
+ * Calculate the greatest common divisor (GCD) of two numbers
+ * @param {number} a The first number.
+ * @param {number} b The second number.
+ * @returns The GCD of a and b.
+ */
+function gcdIterative(a, b) {
+  if (a < b) {
+    const temp = a;
+    a = b;
+    b = temp;
+  }
+  while (b !== 0) {
+    const temp = a % b;
+    a = b;
+    b = temp;
+  }
+  return a;
+}`,
+  typescript: `// TypeScript Example
+function gcdRecursive(a: number, b: number): number {
+  if (b === 0) {
+    return a;
+  }
+  return gcdRecursive(b, a % b);
+}`,
+};
 
 export default function Home() {
+  const [language, setLanguage] = useState<"javascript" | "typescript">(
+    "javascript",
+  );
+  const [code, setCode] = useState(DEFAULT_CODES.javascript);
+  const [copied, setCopied] = useState(false);
+  const editorRef = useRef<editor.IStandaloneCodeEditor | null>(null);
+
+  const handleLanguageChange = (lang: "javascript" | "typescript") => {
+    setLanguage(lang);
+    setCode(DEFAULT_CODES[lang]);
+  };
+
+  const handleEditorDidMount = (editor: editor.IStandaloneCodeEditor) => {
+    editorRef.current = editor;
+  };
+
+  const handleFormat = () => {
+    if (editorRef.current) {
+      editorRef.current?.getAction("editor.action.formatDocument")?.run();
+    }
+  };
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
-    <div className="bg-base-100 flex min-h-screen flex-col items-center justify-center font-sans">
-      <main className="hero bg-base-200/50 relative mx-auto min-h-[80vh] w-full max-w-5xl overflow-hidden rounded-3xl shadow-2xl">
-        {/* Background decoration */}
-        <div className="bg-primary/20 animate-blob absolute top-0 -left-4 h-72 w-72 rounded-full opacity-70 mix-blend-multiply blur-2xl filter"></div>
-        <div className="bg-secondary/20 animate-blob animation-delay-2000 absolute top-0 -right-4 h-72 w-72 rounded-full opacity-70 mix-blend-multiply blur-2xl filter"></div>
-        <div className="bg-accent/20 animate-blob animation-delay-4000 absolute -bottom-8 left-20 h-72 w-72 rounded-full opacity-70 mix-blend-multiply blur-2xl filter"></div>
+    <div className="bg-base-100 flex min-h-screen flex-col font-sans">
+      <main className="relative flex w-full grow flex-col">
+        {/* Code Editor Section */}
+        <div className="bg-base-300 border-base-content/5 flex min-h-screen w-full flex-col shadow-inner">
+          <div className="bg-base-200 border-base-content/10 z-10 flex items-center justify-between border-b px-4 py-3 shadow-sm">
+            <div className="flex items-center gap-4">
+              <select
+                value={language}
+                onChange={(e) =>
+                  handleLanguageChange(
+                    e.target.value as "javascript" | "typescript",
+                  )
+                }
+                className="select select-bordered select-sm bg-base-100 w-32"
+              >
+                <option value="javascript">JavaScript</option>
+                <option value="typescript">TypeScript</option>
+              </select>
+            </div>
 
-        <div className="hero-content relative z-10 flex-col px-8 py-20 text-center">
-          <div className="mb-8 rounded-3xl border border-white/20 bg-white/50 p-4 shadow-sm backdrop-blur-sm">
-            <BookOpenText className="text-primary h-16 w-16 drop-shadow-md" />
-          </div>
-
-          <div className="max-w-2xl">
-            <h1 className="text-base-content mb-6 text-5xl font-extrabold tracking-tight">
-              Welcome to <span className="text-primary">Knowledge Base</span>
-            </h1>
-
-            <p className="text-base-content/70 py-6 text-xl leading-relaxed font-light">
-              Explore comprehensive documentation on Frontend, Backend, and Core
-              CS concepts. Built with{" "}
-              <span className="text-primary font-semibold">Next.js 16</span> and{" "}
-              <span className="text-secondary font-semibold">Nextra 4</span>.
-            </p>
-
-            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+            <div className="flex gap-2">
               <Link
                 href="/docs"
-                className="btn btn-primary btn-lg shadow-primary/30 rounded-full px-10 shadow-lg transition-all duration-300 hover:scale-105"
+                className="btn btn-sm btn-primary btn-outline"
+                title="Go to Docs"
               >
-                Start Reading
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="ml-2 h-5 w-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
+                <BookOpenText className="mr-1 h-4 w-4" /> Docs
               </Link>
-              <a
-                href="https://161043261.github.io/resume/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline btn-secondary btn-lg rounded-full px-10 transition-all duration-300 hover:scale-105"
+              <button
+                onClick={handleFormat}
+                className="btn btn-sm btn-ghost text-base-content/70 hover:text-base-content"
+                title="Format Code"
               >
-                View Resume
-              </a>
+                Format
+              </button>
+              <button
+                onClick={handleCopy}
+                className={`btn btn-sm ${copied ? "btn-success text-success-content" : "btn-ghost text-base-content/70 hover:text-base-content"}`}
+              >
+                <Copy className="mr-1 h-4 w-4" /> {copied ? "Copied!" : "Copy"}
+              </button>
             </div>
+          </div>
+
+          <div className="relative h-[calc(100vh-60px)] grow">
+            <Editor
+              height="100%"
+              language={language}
+              theme="vs-light"
+              value={code}
+              onChange={(val) => setCode(val || "")}
+              onMount={handleEditorDidMount}
+              options={{
+                minimap: { enabled: false },
+                fontSize: 14,
+                fontFamily: "var(--font-mono), monospace",
+                padding: { top: 20, bottom: 20 },
+                scrollBeyondLastLine: false,
+                smoothScrolling: true,
+                cursorBlinking: "smooth",
+                formatOnPaste: true,
+                // Virtualization and rendering optimizations
+                automaticLayout: true,
+                wordWrap: "on",
+                fixedOverflowWidgets: true,
+              }}
+              className="absolute inset-0"
+            />
           </div>
         </div>
       </main>
-
-      <footer className="footer footer-center text-base-content/60 mt-auto p-10">
-        <aside>
-          <p>Built with ❤️ using Next.js & Tailwind CSS</p>
-        </aside>
-      </footer>
     </div>
   );
 }
