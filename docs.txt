@@ -1,0 +1,161 @@
+1:"$Sreact.fragment"
+3:I[39756,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"default"]
+4:I[37457,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"default"]
+5:I[55169,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"TOCProvider"]
+6:I[769,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"Sidebar"]
+7:I[47486,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ClientWrapper"]
+e:I[68027,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"default",1]
+:HL["/homepage/_next/static/chunks/0d1u28oklyvvm.css","style"]
+:HL["/homepage/_next/static/chunks/09_ww0~gfxu-h.css","style"]
+8:T15b6,import { Cards } from "nextra/components";
+
+<div className="hero min-h-[70vh] bg-base-100/50">
+  <div className="hero-content text-center">
+    <div className="max-w-md">
+      <div className="py-6 text-lg text-base-content/60">
+        Welcome to homepage. You can view my resume here: <br />
+        <a href="https://161043261.github.io/resume/" target="_blank" className="link link-primary font-semibold">resume</a>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-4 mt-4">
+        <a href="/docs/base/network" className="btn btn-primary rounded-full shadow-lg shadow-primary/30 hover:scale-105 transition-transform">
+          Network
+        </a>
+        <a href="/docs/frontend/react" className="btn btn-secondary btn-outline rounded-full hover:scale-105 transition-transform">
+          React
+        </a>
+        <a href="/docs/backend/mysql" className="btn btn-accent btn-outline rounded-full hover:scale-105 transition-transform">
+          MySQL
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div className="divider text-primary/50 my-8">TECH STACK</div>
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 pb-20">
+  <div className="card bg-base-100 shadow-xl border border-primary/20 hover:border-primary/50 transition-colors">
+    <div className="card-body">
+      <h2 className="card-title text-2xl text-primary font-bold mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" /></svg>
+        Base
+      </h2>
+      <div className="flex flex-wrap gap-2">
+        <span className="badge badge-primary font-medium text-primary-content">JS/TS</span>
+        <span className="badge badge-primary font-medium text-primary-content">HTML/CSS</span>
+        <span className="badge badge-primary font-medium text-primary-content">SQL</span>
+        <span className="badge badge-primary font-medium text-primary-content">C++</span>
+        <span className="badge badge-primary font-medium text-primary-content">Linux</span>
+        <span className="badge badge-primary font-medium text-primary-content">Network</span>
+        <span className="badge badge-primary font-medium text-primary-content">Git</span>
+      </div>
+    </div>
+  </div>
+
+<div className="card bg-base-100 border-secondary/20 hover:border-secondary/50 border shadow-xl transition-colors">
+  <div className="card-body">
+    <h2 className="card-title text-secondary mb-2 text-2xl font-bold">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"
+        />
+      </svg>
+      Frontend
+    </h2>
+    <div className="flex flex-wrap gap-2">
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        npm/yarn/pnpm
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Vue
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Pinia
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        React
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Zustand
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Webpack
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Vite
+      </span>
+    </div>
+  </div>
+</div>
+
+  <div className="card bg-base-100 shadow-xl border border-accent/20 hover:border-accent/50 transition-colors">
+    <div className="card-body">
+      <h2 className="card-title text-2xl text-accent font-bold mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" /></svg>
+        Backend
+      </h2>
+      <div className="flex flex-wrap gap-2">
+        <span className="badge badge-accent font-medium text-accent-content">Express</span>
+        <span className="badge badge-accent font-medium text-accent-content">Koa</span>
+        <span className="badge badge-accent font-medium text-accent-content">Redis</span>
+        <span className="badge badge-accent font-medium text-accent-content">MongoDB</span>
+        <span className="badge badge-accent font-medium text-accent-content">MySQL</span>
+        <span className="badge badge-accent font-medium text-accent-content">RPC</span>
+        <span className="badge badge-accent font-medium text-accent-content">Kafka</span>
+      </div>
+    </div>
+  </div>
+</div>0:{"P":null,"c":["","docs"],"q":"","i":false,"f":[[["",{"children":["docs",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/homepage/_next/static/chunks/0d1u28oklyvvm.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/homepage/_next/static/chunks/09_ww0~gfxu-h.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/homepage/_next/static/chunks/0m8~8un~n_qhj.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/homepage/_next/static/chunks/0tozzk_21at8~.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/homepage/_next/static/chunks/0ajsui1wsp4eu.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/homepage/_next/static/chunks/06272k69k3mfb.js","async":true,"nonce":"$undefined"}],["$","script","script-4",{"src":"/homepage/_next/static/chunks/0o3mbmpfbay3c.js","async":true,"nonce":"$undefined"}]],"$L2"]}],{"children":[["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L5",null,{"value":[],"children":[["$","$L6",null,{}],["$","$L7",null,{"metadata":{"title":"Page","filePath":"app/docs/page.mdx","timestamp":1774731963000},"bottomContent":"$undefined","sourceCode":"$8","children":["$L9","$La"]}]]}]}],null,"$Lb"]}],{},null,false,null]},null,false,"$@c"]},null,false,null],"$Ld",false]],"m":"$undefined","G":["$e",["$Lf","$L10"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"EGOf6xBO8jLKpxkedSqHm"}
+18:I[97367,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"OutletBoundary"]
+19:"$Sreact.suspense"
+1c:I[97367,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ViewportBoundary"]
+1e:I[97367,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"MetadataBoundary"]
+9:["$","div",null,{"id":"nextra-skip-nav"}]
+a:["$","main",null,{"data-pagefind-body":true,"children":[["$","div",null,{"className":"hero min-h-[70vh] bg-base-100/50","children":["$","div",null,{"className":"hero-content text-center","children":["$","div",null,{"className":"max-w-md","children":[["$","div",null,{"className":"py-6 text-lg text-base-content/60","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Welcome to homepage. You can view my resume here: ",["$","br",null,{}],"\n",["$","a",null,{"href":"https://161043261.github.io/resume/","target":"_blank","className":"link link-primary font-semibold","children":"resume"}]]}]}],["$","div",null,{"className":"flex flex-wrap justify-center gap-4 mt-4","children":[["$","a",null,{"href":"/docs/base/network","className":"btn btn-primary rounded-full shadow-lg shadow-primary/30 hover:scale-105 transition-transform","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Network"}]}],["$","a",null,{"href":"/docs/frontend/react","className":"btn btn-secondary btn-outline rounded-full hover:scale-105 transition-transform","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"React"}]}],["$","a",null,{"href":"/docs/backend/mysql","className":"btn btn-accent btn-outline rounded-full hover:scale-105 transition-transform","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"MySQL"}]}]]}]]}]}]}],"\n",["$","div",null,{"className":"divider text-primary/50 my-8","children":"TECH STACK"}],"\n",["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 pb-20","children":[["$","div",null,{"className":"card bg-base-100 shadow-xl border border-primary/20 hover:border-primary/50 transition-colors","children":["$","div",null,{"className":"card-body","children":[["$","h2",null,{"className":"card-title text-2xl text-primary font-bold mb-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","fill":"none","viewBox":"0 0 24 24","strokeWidth":2,"stroke":"currentColor","className":"w-6 h-6","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","d":"M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"}]}],["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Base"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"JS/TS"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"HTML/CSS"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"SQL"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"C++"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"Linux"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"Network"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"Git"}]]}]]}]}],["$","div",null,{"className":"card bg-base-100 border-secondary/20 hover:border-secondary/50 border shadow-xl transition-colors","children":["$","div",null,{"className":"card-body","children":[["$","h2",null,{"className":"card-title text-secondary mb-2 text-2xl font-bold","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","fill":"none","viewBox":"0 0 24 24","strokeWidth":2,"stroke":"currentColor","className":"h-6 w-6","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","d":"M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"}]}],["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Frontend"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"npm/yarn/pnpm"}]}],"$L11","$L12","$L13","$L14","$L15","$L16"]}]]}]}],"$L17"]}]]}]
+b:["$","$L18",null,{"children":["$","$19",null,{"name":"Next.MetadataOutlet","children":"$@1a"}]}]
+1b:[]
+c:"$W1b"
+d:["$","$1","h",{"children":[null,["$","$L1c",null,{"children":"$L1d"}],["$","div",null,{"hidden":true,"children":["$","$L1e",null,{"children":["$","$19",null,{"name":"Next.Metadata","children":"$L1f"}]}]}],null]}]
+f:["$","link","0",{"rel":"stylesheet","href":"/homepage/_next/static/chunks/0d1u28oklyvvm.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+10:["$","link","1",{"rel":"stylesheet","href":"/homepage/_next/static/chunks/09_ww0~gfxu-h.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+11:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Vue"}]}]
+12:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Pinia"}]}]
+13:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"React"}]}]
+14:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Zustand"}]}]
+15:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Webpack"}]}]
+16:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Vite"}]}]
+17:["$","div",null,{"className":"card bg-base-100 shadow-xl border border-accent/20 hover:border-accent/50 transition-colors","children":["$","div",null,{"className":"card-body","children":[["$","h2",null,{"className":"card-title text-2xl text-accent font-bold mb-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","fill":"none","viewBox":"0 0 24 24","strokeWidth":2,"stroke":"currentColor","className":"w-6 h-6","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","d":"M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"}]}],["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Backend"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Express"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Koa"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Redis"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"MongoDB"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"MySQL"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"RPC"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Kafka"}]]}]]}]}]
+20:I[68386,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ThemeConfigProvider"]
+21:I[6344,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"LastUpdated"]
+22:I[98091,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"Search"]
+23:I[63178,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ThemeProvider"]
+24:I[91675,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"SkipNavLink"]
+25:I[82413,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ClientBanner"]
+26:I[37072,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"CloseBannerButton"]
+27:I[37985,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ConfigProvider"]
+2:["$","html",null,{"lang":"en","dir":"ltr","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$undefined",["$","style",null,{"children":":root {\n  --nextra-primary-hue: 212deg;\n  --nextra-primary-saturation: 100%;\n  --nextra-primary-lightness: 45%;\n  --nextra-bg: 250,250,250;\n  --nextra-content-width: 90rem;\n}\n.dark {\n  --nextra-primary-hue: 204deg;\n  --nextra-primary-saturation: 100%;\n  --nextra-primary-lightness: 55%;\n  --nextra-bg: 17,17,17;\n}\n::selection {\n  background: hsla(var(--nextra-primary-hue),var(--nextra-primary-saturation),var(--nextra-primary-lightness),.3);\n}\nhtml {\n  background: rgb(var(--nextra-bg));\n}"}],["$","meta",null,{"name":"theme-color","media":"(prefers-color-scheme: light)","content":"rgb(250,250,250)"}],["$","meta",null,{"name":"theme-color","media":"(prefers-color-scheme: dark)","content":"rgb(17,17,17)"}],"$undefined"]}],["$","body",null,{"suppressHydrationWarning":true,"children":["$","$L20",null,{"value":{"copyPageButton":true,"darkMode":true,"docsRepositoryBase":"https://github.com/shuding/nextra/tree/main/docs","editLink":"Edit this page","feedback":{"content":"Question? Give us feedback","labels":"feedback"},"i18n":[],"lastUpdated":["$","$L21",null,{}],"navigation":{"next":true,"prev":true},"search":["$","$L22",null,{}],"sidebar":{"defaultMenuCollapseLevel":2,"defaultOpen":true,"toggleButton":true},"themeSwitch":{"dark":"Dark","light":"Light","system":"System"},"toc":{"backToTop":"Scroll to top","float":true,"title":"On This Page"}},"children":["$","$L23",null,{"attribute":"class","defaultTheme":"system","disableTransitionOnChange":true,"storageKey":"theme","children":[["$","$L24",null,{}],["$","$L25",null,{"className":"nextra-banner x:max-md:sticky x:top-0 x:z-30 x:flex x:items-center x:px-2 x:text-slate-50 x:dark:text-white x:bg-neutral-900 x:dark:bg-[linear-gradient(1deg,#383838,#212121)] x:print:[display:none]","suppressHydrationWarning":true,"children":[["$","div",null,{"className":"x:w-full x:text-center x:font-medium x:text-sm x:py-2.5","children":"Nextra 4.0"}],["$","$L26",null,{"storageKey":"some-key","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"try{document.querySelector('.nextra-banner').classList.toggle('x:hidden',localStorage.getItem(\"some-key\"))}catch(e){}"}}],["$","svg",null,{"viewBox":"0 0 20 20","fill":"currentColor","height":"1em","children":["$","path",null,{"d":"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"}]}]]}]]}],["$","$L27",null,{"pageMap":[{"name":"index","route":"/","frontMatter":{},"title":"Index"},{"name":"docs","route":"/docs","children":[{"name":"index","route":"/docs","frontMatter":{"title":"Page","filePath":"app/docs/page.mdx","timestamp":1774731963000},"title":"Page"},{"name":"backend","route":"/docs/backend","children":[{"name":"mysql","route":"/docs/backend/mysql","frontMatter":{"title":"MySQL","filePath":"app/docs/backend/mysql/page.mdx","timestamp":1774731963000},"title":"MySQL"},{"name":"redis","route":"/docs/backend/redis","frontMatter":{"title":"Redis","filePath":"app/docs/backend/redis/page.mdx","timestamp":1774731963000},"title":"Redis"}],"title":"Backend"},{"name":"base","route":"/docs/base","children":[{"name":"css","route":"/docs/base/css","frontMatter":{"title":"CSS","filePath":"app/docs/base/css/page.mdx","timestamp":1774731963000},"title":"CSS"},{"name":"git","route":"/docs/base/git","frontMatter":{"title":"Git","filePath":"app/docs/base/git/page.mdx","timestamp":1774731963000},"title":"Git"},{"name":"js","route":"/docs/base/js","frontMatter":{"title":"JS/TS","filePath":"app/docs/base/js/page.mdx","timestamp":1774731963000},"title":"JS/TS"},{"name":"linux","route":"/docs/base/linux","frontMatter":{"title":"Linux","filePath":"app/docs/base/linux/page.mdx","timestamp":1774731963000},"title":"Linux"},{"name":"network","route":"/docs/base/network","frontMatter":{"title":"Network","filePath":"app/docs/base/network/page.mdx","timestamp":1774731963000},"title":"Network"}],"title":"Base"},{"name":"frontend","route":"/docs/frontend","children":[{"name":"next","route":"/docs/frontend/next","frontMatter":{"title":"Next.js","filePath":"app/docs/frontend/next/page.mdx","timestamp":1774731963000},"title":"Next.js"},{"name":"pinia","route":"/docs/frontend/pinia","frontMatter":{"title":"Pinia","filePath":"app/docs/frontend/pinia/page.mdx","timestamp":1774731963000},"title":"Pinia"},{"name":"react","route":"/docs/frontend/react","frontMatter":{"title":"React","filePath":"app/docs/frontend/react/page.mdx","timestamp":1774731963000},"title":"React"},{"name":"react-router","route":"/docs/frontend/react-router","frontMatter":{"title":"react-router","filePath":"app/docs/frontend/react-router/page.mdx","timestamp":1774731963000},"title":"react-router"},{"name":"vite","route":"/docs/frontend/vite","frontMatter":{"title":"Vite","filePath":"app/docs/frontend/vite/page.mdx","timestamp":1774731963000},"title":"Vite"},{"name":"vitest","route":"/docs/frontend/vitest","frontMatter":{"title":"Vitest","filePath":"app/docs/frontend/vitest/page.mdx","timestamp":1774731963000},"title":"Vitest"},{"name":"vue-router","route":"/docs/frontend/vue-router","frontMatter":{"title":"vue-router","filePath":"app/docs/frontend/vue-router/page.mdx","timestamp":1774731963000},"title":"vue-router"},{"name":"vue3","route":"/docs/frontend/vue3","frontMatter":{"title":"Vue3","filePath":"app/docs/frontend/vue3/page.mdx","timestamp":1774731963000},"title":"Vue3"},{"name":"zustand","route":"/docs/frontend/zustand","frontMatter":{"title":"Zustand","filePath":"app/docs/frontend/zustand/page.mdx","timestamp":1774731963000},"title":"Zustand"}],"title":"Frontend"}],"title":"Docs"}],"navbar":"$L28","footer":"$L29","children":["$L2a","$L2b"]}]]}]}]}]]}]
+2c:I[22016,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],""]
+2d:I[43634,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ClientNavbar"]
+2e:I[31277,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"Switchers"]
+2f:I[34924,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"LocaleSwitch"]
+30:I[75684,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ThemeSwitch"]
+31:I[769,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"MobileNav"]
+28:["$","header",null,{"className":"nextra-navbar x:sticky x:top-0 x:z-30 x:w-full x:bg-transparent x:print:hidden x:max-md:[.nextra-banner:not([class$=hidden])~&]:top-(--nextra-banner-height)","children":[["$","div",null,{"className":"nextra-navbar-blur x:absolute x:-z-1 x:size-full nextra-border x:border-b x:backdrop-blur-md x:bg-nextra-bg/70"}],["$","nav",null,{"style":{"height":"var(--nextra-navbar-height)"},"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width) x:items-center x:gap-4 x:pl-[max(env(safe-area-inset-left),1.5rem)] x:pr-[max(env(safe-area-inset-right),1.5rem)] x:justify-end","children":[["$","$L2c",null,{"href":"/","className":"x:flex x:items-center x:me-auto x:transition-opacity x:focus-visible:nextra-focus x:hover:opacity-75","aria-label":"Home page","children":["$","b",null,{"children":"Nextra"}]}],["$","$L2d",null,{"className":"","children":["$undefined","$undefined","$undefined"]}]]}]]}]
+29:["$","div",null,{"className":"x:bg-gray-100 x:pb-[env(safe-area-inset-bottom)] x:dark:bg-neutral-900 x:print:bg-transparent","children":[["$","$L2e",null,{"children":["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width) x:gap-2 x:py-2 x:px-4","children":[["$","$L2f",null,{}],["$","$L30",null,{}]]}]}],["$","hr",null,{"className":"nextra-border"}],["$","footer",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width) x:justify-center x:py-12 x:text-gray-600 x:dark:text-gray-400 x:md:justify-start x:pl-[max(env(safe-area-inset-left),1.5rem)] x:pr-[max(env(safe-area-inset-right),1.5rem)]","children":["MIT ",2026," © Nextra."]}]]}]
+2a:["$","$L31",null,{}]
+2b:["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]
+1d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+32:I[54500,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"IconMark"]
+1a:null
+1f:[["$","title","0",{"children":"Page"}],["$","link","1",{"rel":"icon","href":"/homepage/favicon.ico?favicon.0x3dzn~oxb6tn.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L32","2",{}]]

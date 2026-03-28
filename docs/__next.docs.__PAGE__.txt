@@ -1,0 +1,127 @@
+1:"$Sreact.fragment"
+2:I[55169,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"TOCProvider"]
+3:I[769,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"Sidebar"]
+4:I[47486,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"ClientWrapper"]
+10:I[97367,["/homepage/_next/static/chunks/0m8~8un~n_qhj.js","/homepage/_next/static/chunks/0tozzk_21at8~.js","/homepage/_next/static/chunks/0ajsui1wsp4eu.js","/homepage/_next/static/chunks/06272k69k3mfb.js","/homepage/_next/static/chunks/0o3mbmpfbay3c.js"],"OutletBoundary"]
+11:"$Sreact.suspense"
+5:T15b6,import { Cards } from "nextra/components";
+
+<div className="hero min-h-[70vh] bg-base-100/50">
+  <div className="hero-content text-center">
+    <div className="max-w-md">
+      <div className="py-6 text-lg text-base-content/60">
+        Welcome to homepage. You can view my resume here: <br />
+        <a href="https://161043261.github.io/resume/" target="_blank" className="link link-primary font-semibold">resume</a>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-4 mt-4">
+        <a href="/docs/base/network" className="btn btn-primary rounded-full shadow-lg shadow-primary/30 hover:scale-105 transition-transform">
+          Network
+        </a>
+        <a href="/docs/frontend/react" className="btn btn-secondary btn-outline rounded-full hover:scale-105 transition-transform">
+          React
+        </a>
+        <a href="/docs/backend/mysql" className="btn btn-accent btn-outline rounded-full hover:scale-105 transition-transform">
+          MySQL
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div className="divider text-primary/50 my-8">TECH STACK</div>
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 pb-20">
+  <div className="card bg-base-100 shadow-xl border border-primary/20 hover:border-primary/50 transition-colors">
+    <div className="card-body">
+      <h2 className="card-title text-2xl text-primary font-bold mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" /></svg>
+        Base
+      </h2>
+      <div className="flex flex-wrap gap-2">
+        <span className="badge badge-primary font-medium text-primary-content">JS/TS</span>
+        <span className="badge badge-primary font-medium text-primary-content">HTML/CSS</span>
+        <span className="badge badge-primary font-medium text-primary-content">SQL</span>
+        <span className="badge badge-primary font-medium text-primary-content">C++</span>
+        <span className="badge badge-primary font-medium text-primary-content">Linux</span>
+        <span className="badge badge-primary font-medium text-primary-content">Network</span>
+        <span className="badge badge-primary font-medium text-primary-content">Git</span>
+      </div>
+    </div>
+  </div>
+
+<div className="card bg-base-100 border-secondary/20 hover:border-secondary/50 border shadow-xl transition-colors">
+  <div className="card-body">
+    <h2 className="card-title text-secondary mb-2 text-2xl font-bold">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"
+        />
+      </svg>
+      Frontend
+    </h2>
+    <div className="flex flex-wrap gap-2">
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        npm/yarn/pnpm
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Vue
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Pinia
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        React
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Zustand
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Webpack
+      </span>
+      <span className="badge badge-secondary text-secondary-content font-medium">
+        Vite
+      </span>
+    </div>
+  </div>
+</div>
+
+  <div className="card bg-base-100 shadow-xl border border-accent/20 hover:border-accent/50 transition-colors">
+    <div className="card-body">
+      <h2 className="card-title text-2xl text-accent font-bold mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" /></svg>
+        Backend
+      </h2>
+      <div className="flex flex-wrap gap-2">
+        <span className="badge badge-accent font-medium text-accent-content">Express</span>
+        <span className="badge badge-accent font-medium text-accent-content">Koa</span>
+        <span className="badge badge-accent font-medium text-accent-content">Redis</span>
+        <span className="badge badge-accent font-medium text-accent-content">MongoDB</span>
+        <span className="badge badge-accent font-medium text-accent-content">MySQL</span>
+        <span className="badge badge-accent font-medium text-accent-content">RPC</span>
+        <span className="badge badge-accent font-medium text-accent-content">Kafka</span>
+      </div>
+    </div>
+  </div>
+</div>0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"x:mx-auto x:flex x:max-w-(--nextra-content-width)","children":["$","$L2",null,{"value":[],"children":[["$","$L3",null,{}],["$","$L4",null,{"metadata":{"title":"Page","filePath":"app/docs/page.mdx","timestamp":1774731963000},"sourceCode":"$5","children":["$L6","$L7"]}]]}]}],null,"$L8"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"EGOf6xBO8jLKpxkedSqHm"}
+6:["$","div",null,{"id":"nextra-skip-nav"}]
+7:["$","main",null,{"data-pagefind-body":true,"children":[["$","div",null,{"className":"hero min-h-[70vh] bg-base-100/50","children":["$","div",null,{"className":"hero-content text-center","children":["$","div",null,{"className":"max-w-md","children":[["$","div",null,{"className":"py-6 text-lg text-base-content/60","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":["Welcome to homepage. You can view my resume here: ",["$","br",null,{}],"\n",["$","a",null,{"href":"https://161043261.github.io/resume/","target":"_blank","className":"link link-primary font-semibold","children":"resume"}]]}]}],["$","div",null,{"className":"flex flex-wrap justify-center gap-4 mt-4","children":[["$","a",null,{"href":"/docs/base/network","className":"btn btn-primary rounded-full shadow-lg shadow-primary/30 hover:scale-105 transition-transform","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Network"}]}],["$","a",null,{"href":"/docs/frontend/react","className":"btn btn-secondary btn-outline rounded-full hover:scale-105 transition-transform","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"React"}]}],["$","a",null,{"href":"/docs/backend/mysql","className":"btn btn-accent btn-outline rounded-full hover:scale-105 transition-transform","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"MySQL"}]}]]}]]}]}]}],"\n",["$","div",null,{"className":"divider text-primary/50 my-8","children":"TECH STACK"}],"\n",["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 pb-20","children":[["$","div",null,{"className":"card bg-base-100 shadow-xl border border-primary/20 hover:border-primary/50 transition-colors","children":["$","div",null,{"className":"card-body","children":[["$","h2",null,{"className":"card-title text-2xl text-primary font-bold mb-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","fill":"none","viewBox":"0 0 24 24","strokeWidth":2,"stroke":"currentColor","className":"w-6 h-6","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","d":"M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"}]}],["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Base"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"JS/TS"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"HTML/CSS"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"SQL"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"C++"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"Linux"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"Network"}],["$","span",null,{"className":"badge badge-primary font-medium text-primary-content","children":"Git"}]]}]]}]}],["$","div",null,{"className":"card bg-base-100 border-secondary/20 hover:border-secondary/50 border shadow-xl transition-colors","children":["$","div",null,{"className":"card-body","children":[["$","h2",null,{"className":"card-title text-secondary mb-2 text-2xl font-bold","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","fill":"none","viewBox":"0 0 24 24","strokeWidth":2,"stroke":"currentColor","className":"h-6 w-6","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","d":"M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"}]}],["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Frontend"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"npm/yarn/pnpm"}]}],"$L9","$La","$Lb","$Lc","$Ld","$Le"]}]]}]}],"$Lf"]}]]}]
+8:["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]
+9:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Vue"}]}]
+a:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Pinia"}]}]
+b:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"React"}]}]
+c:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Zustand"}]}]
+d:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Webpack"}]}]
+e:["$","span",null,{"className":"badge badge-secondary text-secondary-content font-medium","children":["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Vite"}]}]
+f:["$","div",null,{"className":"card bg-base-100 shadow-xl border border-accent/20 hover:border-accent/50 transition-colors","children":["$","div",null,{"className":"card-body","children":[["$","h2",null,{"className":"card-title text-2xl text-accent font-bold mb-2","children":[["$","svg",null,{"xmlns":"http://www.w3.org/2000/svg","fill":"none","viewBox":"0 0 24 24","strokeWidth":2,"stroke":"currentColor","className":"w-6 h-6","children":["$","path",null,{"strokeLinecap":"round","strokeLinejoin":"round","d":"M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"}]}],["$","p",null,{"className":"x:not-first:mt-[1.25em] x:leading-7","children":"Backend"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Express"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Koa"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Redis"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"MongoDB"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"MySQL"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"RPC"}],["$","span",null,{"className":"badge badge-accent font-medium text-accent-content","children":"Kafka"}]]}]]}]}]
+12:null
