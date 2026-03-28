@@ -29,11 +29,15 @@ npm i -D @graphql-eslint/eslint-plugin
 
 ## Usage
 
-```md filename="Markdown" /npm2yarn/
+`````md filename="Markdown" /npm2yarn/
 ${codeBlock}
 
-````)
+```)
   return <MDXRemote compiledSource={rawJs} components={{ $Tabs: Tabs }} />
 }
 ```
+`````
+
+```
+
 ```

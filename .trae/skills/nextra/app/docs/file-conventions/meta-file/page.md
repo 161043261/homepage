@@ -14,6 +14,7 @@ import { pageThemeSchema } from 'private-next-root-dir/../packages/nextra/dist/s
 
 export function Block({ children }) {
 return (
+
 <div className="flex gap-2 *:last:w-full *:last:min-w-0 max-lg:flex-wrap">
 {children}
 </div>

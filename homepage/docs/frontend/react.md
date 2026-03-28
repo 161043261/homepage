@@ -1019,10 +1019,10 @@ export default function App() {
   return (
     <>
       {/* 使用 useEffect(effect, deps), effect 异步执行, 有淡入过渡 */}
-      <div className="w-20 h-20 bg-lime-200 opacity-0 duration-[5s]" id="box" />
+      <div className="h-20 w-20 bg-lime-200 opacity-0 duration-[5s]" id="box" />
       {/* 使用 useLayoutEffect(effect, deps), effect 同步执行, 没有淡入过渡 */}
       <div
-        className="w-20 h-20 bg-lime-200 opacity-0 duration-[5s]"
+        className="h-20 w-20 bg-lime-200 opacity-0 duration-[5s]"
         id="box2"
       />
     </>
@@ -1126,7 +1126,7 @@ export default function App() {
   return (
     <>
       <button
-        className="p-3 rounded-full border cursor-pointer"
+        className="cursor-pointer rounded-full border p-3"
         onClick={handleClick}
       >
         父组件获取子组件的 DOM 节点

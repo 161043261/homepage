@@ -377,7 +377,7 @@ interface FeatureCardProps {
 
 export function FeatureCard({ title, description, icon }: FeatureCardProps) {
   return (
-    <div className="feature-card p-4 border rounded-lg">
+    <div className="feature-card rounded-lg border p-4">
       {icon && <div className="mb-2">{icon}</div>}
       <h3 className="font-semibold">{title}</h3>
       <p className="text-gray-600 dark:text-gray-400">{description}</p>

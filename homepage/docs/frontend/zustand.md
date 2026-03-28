@@ -646,7 +646,7 @@ function Update() {
   const age = useUserStore((state) => state.age);
 
   return (
-    <div className="bg-lime-200 flex flex-col gap-5">
+    <div className="flex flex-col gap-5 bg-lime-200">
       <div>name: {name}</div>
       <div>age: {age}</div>
       <button onClick={() => setName(name + "!")}>setName</button>
@@ -684,7 +684,7 @@ function Update() {
   const age = useUserStore((state) => state.age);
 
   return (
-    <div className="bg-lime-200 flex flex-col gap-5">
+    <div className="flex flex-col gap-5 bg-lime-200">
       <div>name: {name}</div>
       <div>age: {age}</div>
       <button onClick={() => setName(name + "!")}>setName</button>

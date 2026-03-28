@@ -550,8 +550,8 @@ defineExpose({ loadStart, loadEnd });
 </script>
 
 <template>
-  <div class="fixed top-0 w-dvw h-[3px]">
-    <div class="h-[inherit] w-0 bg-lime-100 bar" />
+  <div class="fixed top-0 h-[3px] w-dvw">
+    <div class="bar h-[inherit] w-0 bg-lime-100" />
   </div>
 </template>
 

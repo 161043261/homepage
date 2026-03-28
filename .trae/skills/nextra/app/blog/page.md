@@ -38,6 +38,7 @@ description:
 date: '2023-01-24'
 }
 ].map(page => (
+
 <div key={page.route} className="mt-12">
 <h3 className="text-2xl font-semibold">{page.title}</h3>
 <p className="my-6 leading-7 opacity-80">

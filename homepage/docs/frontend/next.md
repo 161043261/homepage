@@ -1284,7 +1284,7 @@ export default function Login() {
   return (
     <>
       <h1>Login</h1>
-      <div className="w-20 mx-auto mt-20">
+      <div className="mx-auto mt-20 w-20">
         <form action={actionWithId} className="flex flex-col gap-2">
           {/* input 必须有 name 属性, 作为 formData 对象的 key */}
           <input type="text" name="username" placeholder="username" />
@@ -1367,7 +1367,7 @@ export default function Login() {
   return (
     <>
       <h1>{isPending ? "Loading..." : state.message}</h1>
-      <div className="w-20 mx-auto mt-20">
+      <div className="mx-auto mt-20 w-20">
         <form action={formAction} className="flex flex-col gap-2">
           <input type="text" name="username" placeholder="username" />
           <input type="password" name="password" placeholder="password" />

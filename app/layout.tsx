@@ -3,45 +3,71 @@ import { Banner, Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 import { PropsWithChildren } from "react";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-export const metadata = {
-  // Define your metadata here
-  // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+export const metadata: Metadata = {
+  title: {
+    template: "%s | Homepage",
+    default: "Homepage",
+  },
+  description:
+    "A modern, high-performance static site built with Next.js and Nextra.",
+  metadataBase: new URL("https://github.com/161043261/homepage"),
+  openGraph: {
+    title: "Homepage",
+    description: "Welcome to our Homepage site.",
+    siteName: "Homepage",
+    type: "website",
+  },
 };
 
-const banner = <Banner storageKey="some-key">Nextra 4.0</Banner>;
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+};
+
+const banner = (
+  <Banner
+    storageKey="homepage-banner"
+    className="bg-blue-50! text-blue-700! dark:bg-blue-900/40! dark:text-blue-200!"
+  >
+    Welcome to Homepage
+  </Banner>
+);
+
 const navbar = (
   <Navbar
-    logo={<b>Nextra</b>}
-    // ... Your additional navbar options
+    logo={<span className="text-lg font-bold tracking-tight">Homepage</span>}
+    projectLink="https://github.com/161043261/homepage"
   />
 );
-const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>;
+
+const footer = (
+  <Footer>
+    <div className="flex w-full items-center justify-between">
+      <span>MIT {new Date().getFullYear()} © Homepage.</span>
+      <span className="text-sm opacity-70">Built with Nextra & Next.js</span>
+    </div>
+  </Footer>
+);
 
 export default async function RootLayout({ children }: PropsWithChildren) {
   return (
-    <html
-      // Not required, but good for SEO
-      lang="en"
-      // Required to be set
-      dir="ltr"
-      // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
-      suppressHydrationWarning
-    >
-      <Head
-      // ... Your additional head options
-      >
-        {/* Your additional tags should be passed as `children` of `<Head>` element */}
-      </Head>
-      <body suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning>
+      <Head />
+      <body className="antialiased" suppressHydrationWarning>
         <Layout
           banner={banner}
           navbar={navbar}
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
+          docsRepositoryBase="https://github.com/161043261/homepage/tree/main/docs"
           footer={footer}
-          // ... Your additional layout options
+          editLink="Edit this page on GitHub"
         >
           {children}
         </Layout>

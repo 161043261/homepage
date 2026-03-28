@@ -1571,7 +1571,7 @@ const popupVisible = ref(false);
   <!-- .popup 是 #app 的直接子元素 -->
   <Teleport to="#app" :disabled="false">
     <!-- disable 是否禁用 <Teleport /> -->
-    <div class="w-20 h-20 bg-lime-200" v-show="popupVisible">
+    <div class="h-20 w-20 bg-lime-200" v-show="popupVisible">
       我是 #app 的直接子元素
       <button @click="popupVisible = false">隐藏弹窗</button>
     </div>
@@ -1790,7 +1790,7 @@ const flag = ref<boolean>(true);
 /** 默认 .v-enter-from, .v-leave-to */
 .my-prefix-enter-from,
 .my-prefix-leave-to {
-  @apply w-0 h-0;
+  @apply h-0 w-0;
 }
 
 /** 默认 v-enter-active, .v-leave-active */
@@ -1802,7 +1802,7 @@ const flag = ref<boolean>(true);
 /** 默认 v-enter-to, .v-leave-from */
 .my-prefix-enter-to,
 .my-prefix-leave-from {
-  @apply w-50 h-50 rotate-360;
+  @apply h-50 w-50 rotate-360;
 }
 </style>
 ```
@@ -1992,7 +1992,7 @@ const flag = ref<boolean>(true);
 @reference "tailwindcss";
 
 .my-appear-from {
-  @apply w-0 h-0;
+  @apply h-0 w-0;
 }
 
 .my-appear-active {
@@ -2000,7 +2000,7 @@ const flag = ref<boolean>(true);
 }
 
 .my-appear-to {
-  @apply w-50 h-50;
+  @apply h-50 w-50;
 }
 </style>
 ```
@@ -2028,7 +2028,7 @@ const list = reactive<number[]>([0, 1, 2]);
   <div class="wrapper">
     <TransitionGroup
       tag="main"
-      class="border-1 flex flex-wrap gap-1"
+      class="flex flex-wrap gap-1 border-1"
       enter-active-class="animate__animated animate__bounceIn"
       leave-active-class="animate__animated animate__bounceOut"
     >
@@ -2057,10 +2057,10 @@ const shuffleList = () => (arr.value = shuffle(arr.value));
   <div>
     <button @click="shuffleList">shuffleList</button>
     <!-- move-class: 平移的过渡动画 -->
-    <TransitionGroup moveClass="mv" class="flex flex-wrap w-[378px]" tag="div">
+    <TransitionGroup moveClass="mv" class="flex w-[378px] flex-wrap" tag="div">
       <!-- v-for 绑定 key 时, 不能使用数组下标, 否则无法应用过渡动画 -->
       <div
-        class="w-10 h-10 border-slate-300 border-1 flex justify-center items-center"
+        class="flex h-10 w-10 items-center justify-center border-1 border-slate-300"
         v-for="item of arr"
         :key="item.key"
       >
@@ -2379,7 +2379,7 @@ const vDrag: Directive<HTMLElement> = (el) => {
 <template>
   <!-- fixed 固定定位 -->
   <div v-drag class="fixed">
-    <div class="h-20 w-50 bg-lime-100 cursor-pointer" />
+    <div class="h-20 w-50 cursor-pointer bg-lime-100" />
     <div class="h-50 w-50 bg-lime-200" />
   </div>
 </template>
@@ -2634,7 +2634,7 @@ defineExpose({
     enter-active-class="animate__animated animate__bounceIn"
     leave-active-class="animate__animated animate__bounceOut"
   >
-    <div v-if="visible" class="w-50 h-50 bg-lime-100" />
+    <div v-if="visible" class="h-50 w-50 bg-lime-100" />
   </Transition>
 </template>
 ```
@@ -2764,8 +2764,8 @@ const addItem3 = async () => {
 </script>
 
 <template>
-  <div ref="box" class="border-1 h-30 w-50 overflow-auto">
-    <div class="border-b-1 truncate" v-for="item in itemList" :key="item.id">
+  <div ref="box" class="h-30 w-50 overflow-auto border-1">
+    <div class="truncate border-b-1" v-for="item in itemList" :key="item.id">
       {{ item }}
     </div>
   </div>
@@ -2932,7 +2932,7 @@ setInterval(() => {
 </script>
 
 <template>
-  <div class="box w-20 h-20 border-1">v-bind: Dynamic CSS</div>
+  <div class="box h-20 w-20 border-1">v-bind: Dynamic CSS</div>
 </template>
 
 <style scoped lang="css">
@@ -3021,14 +3021,14 @@ const setGlobalFontSize = (pxVal: number) => {
 
 <template>
   <header class="flex">
-    <div class="w-[100px] bg-lime-200 my-div">left</div>
-    <div class="flex-1 bg-blue-300 my-div">
+    <div class="my-div w-[100px] bg-lime-200">left</div>
+    <div class="my-div flex-1 bg-blue-300">
       center
       <button class="mx-[10px]" @click="setGlobalFontSize(36)">大号字体</button>
       <button class="mx-[10px]" @click="setGlobalFontSize(24)">中号字体</button>
       <button class="mx-[10px]" @click="setGlobalFontSize(12)">小号字体</button>
     </div>
-    <div class="w-[100px] bg-lime-200 my-div">right</div>
+    <div class="my-div w-[100px] bg-lime-200">right</div>
   </header>
 </template>
 
@@ -3036,7 +3036,7 @@ const setGlobalFontSize = (pxVal: number) => {
 @reference "tailwindcss";
 
 .my-div {
-  @apply h-[100px] leading-[100px] text-slate-500 text-center;
+  @apply h-[100px] text-center leading-[100px] text-slate-500;
   font-size: var(--font-size);
 }
 </style>
