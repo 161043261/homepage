@@ -1126,7 +1126,7 @@ export default function App() {
   return (
     <>
       <button
-        className="p-3 rounded-full border-1 cursor-pointer"
+        className="p-3 rounded-full border cursor-pointer"
         onClick={handleClick}
       >
         父组件获取子组件的 DOM 节点
