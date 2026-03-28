@@ -1,2 +1,5 @@
 packages:
-  - homepage-v2
+  - homepage
+
+onlyBuiltDependencies:
+  - esbuild

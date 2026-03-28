@@ -33,6 +33,6 @@ jobs: # 工作流中的作业
         uses: peaceiris/actions-gh-pages@v4 # 使用预定义的 peaceiris/actions-gh-pages 动作部署 GitHub Pages
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.vitepress/dist
+          publish_dir: ./out
           user_name: "161043261"
           user_email: "161043261@qq.com"

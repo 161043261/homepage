@@ -1,0 +1,24 @@
+{
+  "author": "github.com/161043261",
+  "description": "homepage",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.8.1",
+    "vitepress": "^1.6.4"
+  },
+  "keywords": [
+    "homepage"
+  ],
+  "license": "ISC",
+  "name": "homepage",
+  "packageManager": "pnpm@10.5.2",
+  "scripts": {
+    "build": "rm -rf ./vitepress/dist && vitepress build",
+    "dev": "vitepress dev",
+    "format": "prettier --write ./docs .vitepress/theme",
+    "prepare": "husky",
+    "preview": "vitepress preview"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
