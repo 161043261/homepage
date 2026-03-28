@@ -1,8 +1,8 @@
 "use client";
 
-import { BookOpenText, Copy } from "lucide-react";
+import { BookOpenText, Copy, Moon, Sun } from "lucide-react";
 import Link from "next/link";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Editor from "@monaco-editor/react";
 import { editor } from "monaco-editor";
 
@@ -42,7 +42,26 @@ export default function Home() {
   );
   const [code, setCode] = useState(DEFAULT_CODES.javascript);
   const [copied, setCopied] = useState(false);
+  const [theme, setTheme] = useState<"vs-light" | "vs-dark">(() => {
+    if (typeof window !== "undefined") {
+      return window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "vs-dark"
+        : "vs-light";
+    }
+    return "vs-light";
+  });
   const editorRef = useRef<editor.IStandaloneCodeEditor | null>(null);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChange = (e: MediaQueryListEvent) => {
+      setTheme(e.matches ? "vs-dark" : "vs-light");
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
 
   const handleLanguageChange = (lang: "javascript" | "typescript") => {
     setLanguage(lang);
@@ -107,6 +126,23 @@ export default function Home() {
               >
                 <Copy className="mr-1 h-4 w-4" /> {copied ? "Copied!" : "Copy"}
               </button>
+              <div className="border-base-content/10 ml-1 flex items-center gap-2 border-l pl-2">
+                <Sun
+                  className={`h-4 w-4 ${theme === "vs-light" ? "text-primary" : "text-base-content/50"}`}
+                />
+                <input
+                  type="checkbox"
+                  className="toggle toggle-sm toggle-primary"
+                  checked={theme === "vs-dark"}
+                  onChange={(e) =>
+                    setTheme(e.target.checked ? "vs-dark" : "vs-light")
+                  }
+                  title="Toggle Theme"
+                />
+                <Moon
+                  className={`h-4 w-4 ${theme === "vs-dark" ? "text-primary" : "text-base-content/50"}`}
+                />
+              </div>
             </div>
           </div>
 
@@ -114,7 +150,7 @@ export default function Home() {
             <Editor
               height="100%"
               language={language}
-              theme="vs-light"
+              theme={theme}
               value={code}
               onChange={(val) => setCode(val || "")}
               onMount={handleEditorDidMount}
